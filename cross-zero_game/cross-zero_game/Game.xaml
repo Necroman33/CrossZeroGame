@@ -1,0 +1,46 @@
+﻿<Window x:Class="cross_zero_game.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cross_zero_game"
+        mc:Ignorable="d"
+        Title="Крестики-Нолики" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="cell1_1" Content="" HorizontalAlignment="Left" Height="83" Margin="75,54,0,0" VerticalAlignment="Top" Width="80" Click="Cell1_1_Click"/>
+        <Button x:Name="cell1_2" Content="" HorizontalAlignment="Left" Height="83" Margin="155,54,0,0" VerticalAlignment="Top" Width="79" Click="Cell1_2_Click"/>
+        <Button x:Name="cell1_3" Content="" HorizontalAlignment="Left" Height="83" Margin="234,54,0,0" VerticalAlignment="Top" Width="80" Click="Cell1_3_Click"/>
+        <Button x:Name="cell2_1" Content="" HorizontalAlignment="Left" Height="84" Margin="75,137,0,0" VerticalAlignment="Top" Width="80" Click="Cell2_1_Click"/>
+        <Button x:Name="cell2_2" Content="" HorizontalAlignment="Left" Height="84" Margin="155,137,0,0" VerticalAlignment="Top" Width="79" Click="Cell2_2_Click"/>
+        <Button x:Name="cell2_3" Content="" HorizontalAlignment="Left" Height="84" Margin="234,137,0,0" VerticalAlignment="Top" Width="80" Click="Cell2_3_Click"/>
+        <Button x:Name="cell3_1" Content="" HorizontalAlignment="Left" Height="83" Margin="75,221,0,0" VerticalAlignment="Top" Width="80" Click="Cell3_1_Click"/>
+        <Button x:Name="cell3_2" Content="" HorizontalAlignment="Left" Height="83" Margin="155,221,0,0" VerticalAlignment="Top" Width="79" Click="Cell3_2_Click"/>
+        <Button x:Name="cell3_3" Content="" HorizontalAlignment="Left" Height="83" Margin="234,221,0,0" VerticalAlignment="Top" Width="80" Click="Cell3_3_Click"/>
+        <Button x:Name="reset_btn" Content="Новая игра" HorizontalAlignment="Left" Height="54" Margin="341,159,0,0" VerticalAlignment="Top" Width="114" Click="Reset_btn_Click"/>
+        <StackPanel x:Name="symbol_type" Margin="0,171,0,-171">
+            <RadioButton x:Name="crossBtn" IsChecked="True" Content="Крестики" HorizontalAlignment="Left" Margin="641,154,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="zeroBtn" Content="Нолики" HorizontalAlignment="Left" Margin="641,17,0,0" VerticalAlignment="Top"/>
+        </StackPanel>
+        <Label x:Name="label" Content="Настройки" HorizontalAlignment="Left" Height="37" Margin="587,185,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label x:Name="label1" Content="Тип используемого&#xD;&#xA; символа" HorizontalAlignment="Left" Height="47" Margin="638,268,0,0" VerticalAlignment="Top" Width="124"/>
+        <Label x:Name="label2" Content="Очерёдность&#xD;&#xA; хода" HorizontalAlignment="Left" Height="47" Margin="503,271,0,0" VerticalAlignment="Top" Width="106"/>
+        <Label x:Name="label3" Content="(чтобы изменения вступили в силу&#xD;&#xA; начните новую игру)" HorizontalAlignment="Left" Height="44" Margin="505,214,0,0" VerticalAlignment="Top" Width="257"/>
+        <StackPanel x:Name="priority" Margin="-1,171,1,-171">
+            <RadioButton x:Name="firstBtn" Content="Перывый" IsChecked="True" HorizontalAlignment="Left" Margin="505,154,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="secondBtn" Content="Второй" HorizontalAlignment="Left" Margin="505,17,0,0" VerticalAlignment="Top"/>
+        </StackPanel>
+        <Label x:Name="usertext_label" Content="Текущий пользователь: " HorizontalAlignment="Left" Height="34" Margin="515,8,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label x:Name="username_label" Content="" HorizontalAlignment="Left" Height="34" Margin="658,8,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="to_main_btn" Content="На главную" HorizontalAlignment="Left" Height="54" Margin="341,233,0,0" VerticalAlignment="Top" Width="114" Click="To_main_btn_Click"/>
+        <Label x:Name="Stats_text" Content="Статистика:" HorizontalAlignment="Left" Height="38" Margin="561,42,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label x:Name="Wins_text" Content="Победы:" HorizontalAlignment="Left" Height="34" Margin="549,73,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="Loses_text" Content="Поражения:" HorizontalAlignment="Left" Height="34" Margin="529,112,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="Draws_text" Content="Ничьи:" HorizontalAlignment="Left" Height="34" Margin="557,146,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label x:Name="Wins" Content="" HorizontalAlignment="Left" Height="34" Margin="602,73,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label x:Name="Loses" Content="" HorizontalAlignment="Left" Height="34" Margin="602,112,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label x:Name="Draws" Content="" HorizontalAlignment="Left" Height="34" Margin="602,146,0,0" VerticalAlignment="Top" Width="132"/>
+    </Grid>
+</Window>

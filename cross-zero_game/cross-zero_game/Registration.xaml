@@ -1,0 +1,20 @@
+﻿<Window x:Class="cross_zero_game.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cross_zero_game"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="button" Content="Зарегистрироваться" HorizontalAlignment="Left" Height="48" Margin="290,251,0,0" VerticalAlignment="Top" Width="197" Click="Button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="27" Margin="290,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <Label x:Name="label" Content="Введите логин:" HorizontalAlignment="Left" Height="38" Margin="317,15,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="label1" Content="Введите пароль:" HorizontalAlignment="Left" Height="41" Margin="317,90,0,0" VerticalAlignment="Top" Width="102"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="290,127,0,0" VerticalAlignment="Top" Height="28" Width="197"/>
+        <Button x:Name="to_main_btn" Content="На главную" HorizontalAlignment="Left" Height="46" Margin="290,321,0,0" VerticalAlignment="Top" Width="197" Click="To_main_btn_Click"/>
+        <Label x:Name="label2" Content="Повторите пароль:" HorizontalAlignment="Left" Height="41" Margin="317,160,0,0" VerticalAlignment="Top" Width="170"/>
+        <PasswordBox x:Name="passwordBox2" HorizontalAlignment="Left" Margin="290,198,0,0" VerticalAlignment="Top" Height="28" Width="197"/>
+
+    </Grid>
+</Window>
